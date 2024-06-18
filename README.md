@@ -10,19 +10,12 @@ In the tables below the cases resulting in some kind of overflow/underflow will 
 This test tests the `addf` instruction. The results should look something like this:
 | Mem  | Value  |
 |------|--------|
-| 0x10 | 0x4542 |
-| 0x12 | 0x78DA |
-| 0x14 | 0x7733 |
-| 0x16 | 0x4361 |
-| 0x18 | 0x4361 |
-| 0x1A | 0x07FE |
-| 0x1B | 0x0002 |
-| 0x1C | NaN    |
-| 0x1D | NaN    |
-| 0x1E | NaN    |
-| 0x1F | Inf    |
-| 0x20 | InF    |
-| 0x22 | Inf    |
+| 0x10 | 0x42A0 |
+| 0x12 | 0x5C6C |
+| 0x14 | 0x5B98 |
+| 0x16 | 0x7FFF |
+| 0x18 | 0x0400 |
+| 0x1A | 0x0000 |
 
 ### Sub
 This test tests the `subf` instruction. The results should look something like this:
