@@ -1,4 +1,4 @@
-.macro $MOVEF p1 imm16
+.macro $MOVIF p1 imm16
     MOVI R2, 0xA0
     MOVI R3, lo(\imm16)
     MOVHI R3, hi(\imm16)
