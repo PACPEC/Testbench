@@ -5,29 +5,36 @@ MOVI R1, 0x10
 $MOVIF F1, 0x3E48
 $MOVIF F2, 0x4361
 
+; 1.57 * 3.69
 MULF F3, F1, F2 ; Multiplicacion dos numeros normales pequeños
 STF 0(R1), F3
 
 $MOVIF F1, 0x3E48
 $MOVIF F2, 0x7104
 
+;3.69 * 10268.786
 MULF F3, F1, F2 ; Multiplicacion dos numeros normales pequeños y grandes (no overflow)
 STF 2(R1), F3
 
 $MOVIF F1, 0x7104
 $MOVIF F2, 0x7732
 
+; 10268.786 * 29468.352
 MULF F3, F1, F2 ; Multiplicacion dos numeros normales grandes (overflow)
 STF 4(R1), F3
 
 $MOVIF F1, 0x03ff
 $MOVIF F2, 0x4361
+
+; 3.69 * 0.000060975552
 MULF F3, F1, F2 ; Multiplicacion numero normal * denormal
 STF 6(R1), F3
 
+; 0.000060975552 * 3.69
 MULF F3, F2, F1 ; Multiplicacion denormal * numero normal
 STF 8(R1), F3
 
+; 0.000060975552 * 0.000060975552 
 MULF F3, F1, F1 ; Multiplicacion dos numeros denormales (overflow)
 STF 10(R1), F3
 

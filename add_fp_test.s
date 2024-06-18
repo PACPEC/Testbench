@@ -27,11 +27,11 @@ $MOVIF F1, 0x03ff
 $MOVIF F2, 0x4361
 
 ;0.000060975552 + 3.69
-ADDF F3, F1, F2 ; Suma numero normal + denormal
+ADDF F3, F1, F2 ; Suma numero denormal + normal
 STF 6(R1), F3
 
 ;3.69 + 0.000060975552
-ADDF F3, F2, F1 ; Suma denormal + numero normal
+ADDF F3, F2, F1 ; Suma numero normal + numero denormal
 STF 8(R1), F3
 
 $MOVIF F1, 0x03ff
