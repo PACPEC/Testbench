@@ -34,19 +34,13 @@ This test tests the `subf` instruction. The results should look something like t
 This test tests the `mulf` instruction. The results should look something like this:
 | Mem  | Value  |
 |------|--------|
-| 0x10 | 0x45CB |
-| 0x12 | 0x78A0 |
-| 0x14 | Inf(of)|
-| 0x16 | 0x0B5F |
-| 0x18 | 0x0B5F |
-| 0x1A | 0x0000(of) |
-| 0x1B | NaN    |
-| 0x1C | NaN    |
-| 0x1D | NaN    |
-| 0x1E | Inf    |
-| 0x1F | Inf    |
-| 0x20 | InF    |
-| 0x22 | NaN    |
+| 0x10 | 0x42E4 |
+| 0x12 | 0x5C4E |
+| 0x14 | 0x7FFF |
+| 0x16 | 0x0000 |
+| 0x18 | 0xC320 |
+| 0x1A | 0xC320 |
+| 0x1B | 0x4320 |
 
 ### Div
 This test tests the `divf` instruction. The results should look something like this:
