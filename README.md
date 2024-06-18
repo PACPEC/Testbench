@@ -55,7 +55,3 @@ This test tests the `divf` instruction. The results should look something like t
 | 0x1B | 0x3E00 |
 | 0x1C | 0x7FFF(of) |
 | 0x1D | 0x7FFF(of) |
-| 0x1E | Inf    |
-| 0x1F | Inf    |
-| 0x20 | InF    |
-| 0x22 | NaN    |
