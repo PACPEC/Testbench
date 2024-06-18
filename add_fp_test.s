@@ -28,7 +28,6 @@ $MOVIF F1, 0x7DFF
 ;4290772992 + 4290772992 
 ADDF F3, F1, F1 ; Suma dos numeros mas grandes (overflow)
 STF 12(R1), F3
------
 
 $MOVIF F1, 0x0200
 
