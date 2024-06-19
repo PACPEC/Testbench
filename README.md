@@ -1,6 +1,7 @@
 # Testbench
 This repository contains a series of tests for the PEC project extension. The tests are divided
 in two categories: basic tests and Julia set test.
+The c files of the Julia set tests do not compile and I don't know how to fix them :(
 
 ## Basic tests
 To compile and launch the basic tests you just have to use the `sisa-as`. After assembling the test you need to
