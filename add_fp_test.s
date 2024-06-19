@@ -39,3 +39,4 @@ $MOVIF F2, 0x81FF
 
 ;0.000000000931322 + -0.000000000929503
 ADDF F3, F1, F2 ; Suma numero mas pequeño y su negativo (underflow)
+STF 16(R1), F3
