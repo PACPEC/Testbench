@@ -23,7 +23,7 @@ $MOVIF F2, 0x5B98
 ADDF F3, F1, F2 ; Suma dos numeros normales pequeños y grandes
 STF 4(R1), F3
 
-$MOVIF F1, 0x7DFF
+$MOVIF F1, 0x7FFF
 
 ;4290772992 + 4290772992 
 ADDF F3, F1, F1 ; Suma dos numeros mas grandes (overflow)

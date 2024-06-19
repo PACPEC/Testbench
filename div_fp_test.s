@@ -20,7 +20,7 @@ $MOVIF F1, 0x5B98
 $MOVIF F2, 0x41B0
 
 ; 3.69 / 29468.352
-DIVF F3, F1, F2 ; Division dos numeros normales grandes y pequeños
+DIVF F3, F2, F1 ; Division dos numeros normales grandes y pequeños
 STF 4(R1), F3
 
 $MOVIF F1, 0x7DFF

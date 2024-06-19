@@ -16,7 +16,7 @@ $MOVIF F2, 0x5881
 MULF F3, F1, F2 ; Multiplicacion dos numeros normales pequeños y grandes (no overflow)
 STF 2(R1), F3
 
-$MOVIF F1, 0x7DFF
+$MOVIF F1, 0x7FFF
 $MOVIF F2, 0x5B98
 
 ; 4290772992 * 29468.352
