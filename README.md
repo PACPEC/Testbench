@@ -4,7 +4,7 @@ in two categories: basic tests and Julia set test.
 
 ## Basic tests
 To compile and launch the basic tests you just have to use the `sisa-as`. After assembling the test you need to
-dissasemble it with `sisa'objdump` to get the hexadecimal version of the instructions.
+dissasemble it with `sisa-objdump` to get the hexadecimal version of the instructions.
 In the tables below the cases resulting in some kind of overflow/underflow will be marked with (of)
 ### Add
 This test tests the `addf` instruction. The results should look something like this:
@@ -48,7 +48,7 @@ This test tests the `divf` instruction. The results should look something like t
 |------|--------|
 | 0x10 | 0x3B67 |
 | 0x12 | 0x3AC9 |
-| 0x14 | 0x240C |
+| 0x14 | 0x240D |
 | 0x16 | 0x7FFF(of) |
 | 0x18 | 0xBE00 |
 | 0x1A | 0xBE00 |
