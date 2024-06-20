@@ -6,3 +6,8 @@
     ST 0(R2), R3
     LDF \p1, 0(R2)
 .endm
+
+.macro $movei p1 imm16
+        movi    \p1, lo(\imm16)
+        movhi   \p1, hi(\imm16)
+.endm

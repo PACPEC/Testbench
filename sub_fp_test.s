@@ -1,5 +1,8 @@
 .include "macros.s"
 
+$MOVEI r1, RSG
+wrs    s5, r1      ;inicializamos en S5 la direccion de la rutina de antencion a las interrupcciones
+
 MOVI R1, 0x10
 
 $MOVIF F1, 0x3F23
@@ -46,3 +49,7 @@ $MOVIF F2, 0xFDFF
 
 SUBF F3, F1, F2 ; Resta dos numeros (overflow)
 STF 12(R1), F3
+
+halt
+
+RSG:   reti
