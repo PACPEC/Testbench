@@ -39,9 +39,9 @@ This test tests the `mulf` instruction. The results should look something like t
 | 0x12 | 0x5C4E |
 | 0x14 | 0x7FFF(of) |
 | 0x16 | 0x0000(of) |
-| 0x18 | 0xCCE0 |
-| 0x1A | 0xCCE0 |
-| 0x1B | 0x4CE0 |
+| 0x18 | 0xC2E0 |
+| 0x1A | 0xC2E0 |
+| 0x1B | 0x42E0 |
 
 ### Div
 This test tests the `divf` instruction. The results should look something like this:
