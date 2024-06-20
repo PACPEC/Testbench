@@ -27,16 +27,16 @@ $MOVIF F1, 0x7FFF
 
 ;4290772992 + 4290772992 
 ADDF F3, F1, F1 ; Suma dos numeros mas grandes (overflow)
-STF 12(R1), F3
+STF 6(R1), F3
 
 $MOVIF F1, 0x0200
 
 ;0.000000000931322 + 0.000000000931322
 ADDF F3, F1, F1 ; Suma numeros mas pequeños
-STF 14(R1), F3
+STF 8(R1), F3
 
 $MOVIF F2, 0x81FF
 
 ;0.000000000931322 + -0.000000000929503
 ADDF F3, F1, F2 ; Suma numero mas pequeño y su negativo (underflow)
-STF 16(R1), F3
+STF 10(R1), F3
